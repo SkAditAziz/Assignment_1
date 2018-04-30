@@ -23,7 +23,7 @@ interface Burger {
     MadeBurger getBurger();
 }
 
-class Chicken implements Burger{
+class Chicken implements Burger {
 
     private MadeBurger newBurger = new MadeBurger();
 
@@ -48,10 +48,9 @@ class Chicken implements Burger{
         return newBurger;
     }
 
-    
 }
 
-class Beef implements Burger{
+class Beef implements Burger {
 
     private MadeBurger newBurger = new MadeBurger();
 
@@ -75,18 +74,18 @@ class Beef implements Burger{
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         return newBurger;
     }
-    
+
 }
 
-class MadeBurger{
-    
+class MadeBurger {
+
     private LinkedList<String> ingredients;
-    
+
     public MadeBurger() {
         ingredients = new LinkedList<>();
     }
-    
-        public void Add(String i) {
+
+    public void Add(String i) {
         ingredients.addLast(i);
     }
 
@@ -96,20 +95,20 @@ class MadeBurger{
             System.out.println(ingredients.get(i));
         }
     }
-    
+
 }
 
-class Waiter{
-    
+class Waiter {
+
     Burger aBurger;
-    
+
     public void Make(Burger b) {
         aBurger = b;
         aBurger.addPatty();
         aBurger.addSauce();
         aBurger.addCheese();
     }
-    
+
 }
 
 public class BurgerShop {
@@ -122,16 +121,16 @@ public class BurgerShop {
         System.out.println("\t***Welcome to TakeOut,Dhanmondi***\t\t\n");
 
         System.out.println("\tWhich would you prefer?? Beef or Chicken?? :\n \t//for Beef press 'b' and 'c' for chicken!!\\ \n");
-        
+
         Scanner sc = new Scanner(System.in);
         char choice;
         choice = sc.next().charAt(0);
-        
+
         System.out.println("==================================================");
         System.out.println("\tYour Juicy and Hot Burger is on the way......\n");
-        
+
         Waiter newWaiter = new Waiter();
-        
+
         if (choice == 'c') {
             Burger chickenBurger = new Chicken();
             newWaiter.Make(chickenBurger);
@@ -145,6 +144,5 @@ public class BurgerShop {
         }
         System.exit(0);
     }
-    
-    
+
 }
