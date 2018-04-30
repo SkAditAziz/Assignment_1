@@ -127,7 +127,7 @@ public class BurgerShop {
         char choice;
         choice = sc.next().charAt(0);
         
-                System.out.println("==================================================");
+        System.out.println("==================================================");
         System.out.println("\tYour Juicy and Hot Burger is on the way......\n");
         
         Waiter newWaiter = new Waiter();
