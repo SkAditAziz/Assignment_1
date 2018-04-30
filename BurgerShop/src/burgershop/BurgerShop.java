@@ -102,6 +102,13 @@ class Waiter{
     
     Burger aBurger;
     
+    public void Make(Burger b) {
+        aBurger = b;
+        aBurger.addPatty();
+        aBurger.addSauce();
+        aBurger.addCheese();
+    }
+    
 }
 
 public class BurgerShop {
