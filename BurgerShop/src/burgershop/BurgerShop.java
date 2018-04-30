@@ -118,6 +118,9 @@ public class BurgerShop {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("\t***Welcome to TakeOut,Dhanmondi***\t\t\n");
+
+        System.out.println("\tWhich would you prefer?? Beef or Chicken?? :\n \t//for Beef press 'b' and 'c' for chicken!!\\ \n");
     }
     
 }
