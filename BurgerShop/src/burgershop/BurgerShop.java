@@ -24,7 +24,7 @@ interface Burger {
 
 class Chicken implements Burger{
 
-    private MadeBurger newBurger = new madeBurger();
+    private MadeBurger newBurger = new MadeBurger();
 
     @Override
     public void addPatty() {
@@ -52,7 +52,7 @@ class Chicken implements Burger{
 
 class Beef implements Burger{
 
-    private madeBurger newBurger = new madeBurger();
+    private MadeBurger newBurger = new MadeBurger();
 
     @Override
     public void addPatty() {
@@ -95,6 +95,12 @@ class MadeBurger{
             System.out.println(ingredients.get(i));
         }
     }
+    
+}
+
+class Waiter{
+    
+    Burger aBurger;
     
 }
 
