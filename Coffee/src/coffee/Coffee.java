@@ -93,6 +93,15 @@ class CoffeeFactory {
     private CoffeeFactory() {
     }
 
+    public static CoffeeFactory existCoffeeFactory() {
+        if (cFactory == null) {
+            cFactory = new CoffeeFactory();
+            System.out.println("\t~~~One & only Coffee Factory has been built successfully~~~\n");
+        } else {
+            System.out.println("\tAlas!! Already a coffee factory is in the world!!\n \tGet your coffee from that one!!!\n\n");
+        }
+        return cFactory;
+    }
 
 }
 
