@@ -125,7 +125,7 @@ public class Coffee {
         // TODO code application logic here
         System.out.println("\t***Welcome to the world of Coffee!!***\n");
         CoffeeFactory cf = CoffeeFactory.existCoffeeFactory();
-        
+        CoffeeFactory cf2 = CoffeeFactory.existCoffeeFactory();
         
     }
     
