@@ -19,7 +19,27 @@ interface CoffeeMaker {
     void sugar();
 
 }
+class CoffeeA implements CoffeeMaker {
 
+    @Override
+    public void milk() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Milk...poured!!");
+    }
+
+    @Override
+    public void caffein() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Caffein...Added!!");
+    }
+
+    @Override
+    public void sugar() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Sugar...Added");
+    }
+
+}
 public class Coffee {
 
     /**
