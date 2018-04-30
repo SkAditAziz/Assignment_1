@@ -126,6 +126,25 @@ public class BurgerShop {
         Scanner sc = new Scanner(System.in);
         char choice;
         choice = sc.next().charAt(0);
+        
+                System.out.println("==================================================");
+        System.out.println("\tYour Juicy and Hot Burger is on the way......\n");
+        
+        Waiter newWaiter = new Waiter();
+        
+        if (choice == 'c') {
+            Burger chickenBurger = new Chicken();
+            newWaiter.Make(chickenBurger);
+            MadeBurger b1 = chickenBurger.getBurger();
+            b1.Show();
+        } else if (choice == 'b') {
+            Burger beefBurger = new Beef();
+            newWaiter.Make(beefBurger);
+            MadeBurger b1 = beefBurger.getBurger();
+            b1.Show();
+        }
+        System.exit(0);
     }
+    
     
 }
