@@ -6,6 +6,7 @@
 package burgershop;
 
 import java.util.LinkedList;
+import java.util.Scanner;
 
 /**
  *
@@ -121,6 +122,10 @@ public class BurgerShop {
         System.out.println("\t***Welcome to TakeOut,Dhanmondi***\t\t\n");
 
         System.out.println("\tWhich would you prefer?? Beef or Chicken?? :\n \t//for Beef press 'b' and 'c' for chicken!!\\ \n");
+        
+        Scanner sc = new Scanner(System.in);
+        char choice;
+        choice = sc.next().charAt(0);
     }
     
 }
