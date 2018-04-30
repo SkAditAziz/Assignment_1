@@ -85,6 +85,17 @@ class MadeBurger{
         ingredients = new LinkedList<>();
     }
     
+        public void Add(String i) {
+        ingredients.addLast(i);
+    }
+
+    public void Show() {
+        System.out.println("\n Burger served as below:");
+        for (int i = 0; i < ingredients.size(); i++) {
+            System.out.println(ingredients.get(i));
+        }
+    }
+    
 }
 
 public class BurgerShop {
