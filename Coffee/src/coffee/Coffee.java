@@ -9,6 +9,17 @@ package coffee;
  *
  * @author AZ
  */
+
+interface CoffeeMaker {
+
+    void milk();
+
+    void caffein();
+
+    void sugar();
+
+}
+
 public class Coffee {
 
     /**
