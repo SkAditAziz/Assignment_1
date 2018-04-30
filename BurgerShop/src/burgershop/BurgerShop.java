@@ -24,24 +24,55 @@ interface Burger {
 
 class Chicken implements Burger{
 
+    private MadeBurger newBurger = new madeBurger();
+
     @Override
     public void addPatty() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        newBurger.Add("Chicken Patty...Added!!");
     }
 
     @Override
     public void addSauce() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        newBurger.Add("Chicken Burger Sauce...Added!!");
     }
 
     @Override
     public void addCheese() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        newBurger.Add("Chicken Burger Cheese...Added!!");
     }
 
     @Override
     public MadeBurger getBurger() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return newBurger;
+    }
+
+    
+}
+
+class Beef implements Burger{
+
+    private madeBurger newBurger = new madeBurger();
+
+    @Override
+    public void addPatty() {
+        newBurger.Add("Beef Patty...Added!!");
+    }
+
+    @Override
+    public void addSauce() {
+        newBurger.Add("Beef Burger Sauce...Added!!");
+    }
+
+    @Override
+    public void addCheese() {
+        newBurger.Add("Beef Burger Cheese...Added!!");
+    }
+
+    @Override
+    public MadeBurger getBurger() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return newBurger;
     }
     
 }
