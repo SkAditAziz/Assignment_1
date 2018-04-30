@@ -5,6 +5,8 @@
  */
 package coffee;
 
+import java.util.Scanner;
+
 /**
  *
  * @author AZ
@@ -127,6 +129,13 @@ public class Coffee {
         CoffeeFactory cf = CoffeeFactory.existCoffeeFactory();
         CoffeeFactory cf2 = CoffeeFactory.existCoffeeFactory();
         
+        System.out.println("\t\t^_^ CHOOSE YOUR COFFEE ^_^\n\t\t coffee 'A' and 'C' is open for all!!\n \t\t 'B' is for diabatic patient!!\n\n \t\t Why late??!! give your choice!! :D \n ");
+
+        Scanner sc = new Scanner(System.in);
+        String choice = null;
+        if (sc.hasNextLine()) {
+            choice = sc.nextLine();
+        }
     }
     
 }
