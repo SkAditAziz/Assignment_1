@@ -103,6 +103,17 @@ class CoffeeFactory {
         return cFactory;
     }
 
+    public static CoffeeMaker make(String choice) {
+        switch (choice) {
+            case "A":
+                return new CoffeeA();
+            case "B":
+                return new CoffeeB();
+            case "C":
+                return new CoffeeC();
+        }
+        return null;
+    }
 }
 
 public class Coffee {
