@@ -136,6 +136,22 @@ public class Coffee {
         if (sc.hasNextLine()) {
             choice = sc.nextLine();
         }
+        
+        CoffeeMaker newCoffee = null;
+
+        if (choice.equals("A")) {
+            newCoffee = CoffeeFactory.make("A");
+        }
+        else if (choice.equals("B")) {
+            newCoffee = CoffeeFactory.make("B");
+        } 
+        else if (choice.equals("C")) {
+            newCoffee = CoffeeFactory.make("C");
+        }
+        
+        newCoffee.milk();
+        newCoffee.sugar();
+        newCoffee.caffein();
     }
     
 }
