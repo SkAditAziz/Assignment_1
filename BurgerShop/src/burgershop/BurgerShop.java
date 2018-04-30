@@ -5,6 +5,8 @@
  */
 package burgershop;
 
+import java.util.LinkedList;
+
 /**
  *
  * @author AZ
@@ -20,7 +22,33 @@ interface Burger {
     MadeBurger getBurger();
 }
 
+class Chicken implements Burger{
+
+    @Override
+    public void addPatty() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void addSauce() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void addCheese() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public MadeBurger getBurger() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+}
+
 class MadeBurger{
+    
+    private LinkedList<String> ingredients;
     
 }
 
