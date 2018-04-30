@@ -81,6 +81,10 @@ class MadeBurger{
     
     private LinkedList<String> ingredients;
     
+    public MadeBurger() {
+        ingredients = new LinkedList<>();
+    }
+    
 }
 
 public class BurgerShop {
