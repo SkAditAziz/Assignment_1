@@ -40,6 +40,62 @@ class CoffeeA implements CoffeeMaker {
     }
 
 }
+
+class CoffeeB implements CoffeeMaker {
+
+    @Override
+    public void milk() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Milk...poured!!");
+    }
+
+    @Override
+    public void caffein() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Caffein...Added!!");
+    }
+
+    @Override
+    public void sugar() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("No Sugar added!!");
+    }
+
+}
+
+class CoffeeC implements CoffeeMaker {
+
+    @Override
+    public void milk() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Milk...poured!!");
+    }
+
+    @Override
+    public void caffein() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Caffein...Added!!");
+    }
+
+    @Override
+    public void sugar() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Sugar...Added");
+    }
+
+}
+
+
+class CoffeeFactory {
+
+    private static CoffeeFactory cFactory;
+
+    private CoffeeFactory() {
+    }
+
+
+}
+
 public class Coffee {
 
     /**
