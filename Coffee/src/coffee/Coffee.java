@@ -123,6 +123,10 @@ public class Coffee {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println("\t***Welcome to the world of Coffee!!***\n");
+        CoffeeFactory cf = CoffeeFactory.existCoffeeFactory();
+        
+        
     }
     
 }
