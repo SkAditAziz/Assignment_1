@@ -9,6 +9,21 @@ package burgershop;
  *
  * @author AZ
  */
+interface Burger {
+
+    void addPatty();
+
+    void addSauce();
+
+    void addCheese();
+
+    MadeBurger getBurger();
+}
+
+class MadeBurger{
+    
+}
+
 public class BurgerShop {
 
     /**
